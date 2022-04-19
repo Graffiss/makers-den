@@ -2,11 +2,53 @@
   height: 100vh;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(9 10 16);
 }
-input {
-  width: 300px;
-  height: 50px;
-  border-radius: 5px;
+
+.autocomplete-wrapper {
+  position: relative;
+}
+
+.results {
+  position: absolute;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: orange;
+}
+
+ol {
+  color: white;
+}
+
+li {
+  max-height: 30vh;
+  overflow: auto;
+}
+
+img {
+  margin: 10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(27, 28, 37);
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.wrapper:hover {
+  background-color: darkslategray;
+}
+
+.wrapper.active {
+  background-color: darkslategray;
 }
