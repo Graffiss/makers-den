@@ -1,12 +1,12 @@
-import React from "react";
 import "./App.css";
+import Autocomplete from "./components/autocomplete.component";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <input type={"search"} />
+      <Autocomplete />
     </div>
   );
-}
+};
 
 export default App;
